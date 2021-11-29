@@ -1,10 +1,6 @@
 view: orgbook {
 
-  derived_table: {
-    sql:
-      SELECT *
-      FROM atomic.ca_bc_gov_orgbook_api_call_1 ;;
-    }
+  sql_table_name: atomic.ca_bc_gov_orgbook_api_call_1 ;;
 
 
   dimension: api_version {}
