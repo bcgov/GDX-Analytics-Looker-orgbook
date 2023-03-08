@@ -26,7 +26,8 @@ view: orgbook {
       WHERE {% incrementcondition %} timestamp {% endincrementcondition %} -- this matches the table column used by increment_key
       ;;
 
-    distribution_style: all
+    distribution: "timestamp"
+    sortkeys: ["timestamp"]
     datagroup_trigger: datagroup_15_45
     increment_key: "event_hour" # this, linked with increment_offset, says to consider "timestamp" and
     # to reprocess up to 3 hours of results
