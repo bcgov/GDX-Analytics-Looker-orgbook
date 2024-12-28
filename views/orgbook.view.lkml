@@ -2,6 +2,9 @@ include: "//snowplow_web_block/Includes/date_comparisons_common.view.lkml"
 
 view: orgbook {
 
+
+  #test
+
   derived_table: {
     sql: SELECT
       app_id, api_version, endpoint, response_time, total, parameters, internal_call,
